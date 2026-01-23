@@ -1,13 +1,82 @@
 <!DOCTYPE html>
-<div id="container"></div>
-<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-<script type="module">
+<html>
+<head>
+  <title>A1 D3 Assignment</title>
+  <style>
+    body {
+      background: white;
+      color: white;
+      font-family: Arial;
+    }
+  </style>
+</head>
+<body>
 
+<div id="container"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script>
-  console.log(d3); // test if d3 is loaded
-  // Add an SVG
-  // Add Rectangles
-  // Add Circles
-  // Add Lines
-  // Add Polygons
+  console.log(d3); 
+
+
+  const width = 300;
+  const height = 400;
+
+
+  const svg = d3.select("#container")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .style("border", "1px solid white");
+
+  
+  // triangle
+  //source : https://d3-graph-gallery.com/graph/shape.html?utm_source=chatgpt.com
+  svg.append("polygon")
+  .attr("points", "150,100 200,200 100,200") 
+  .attr("fill", "purple")
+  .attr("stroke", "white")
+  .attr("stroke-width", 2);
+
+  // Circles
+  // source : https://d3-graph-gallery.com/graph/shape.html
+  svg.append("circle")
+    .attr("cx", 250)
+    .attr("cy", 80)
+    .attr("r", 50)
+    .attr("stroke", "black")
+    .attr("fill", "yellow");
+ 
+  // LINES
+  // source = https://www.tutorialsteacher.com/d3js/create-svg-elements-in-d3js?
+  svg.append("line")
+    .attr("x1", 50)
+    .attr("y1", 200)
+    .attr("x2", 300)
+    .attr("y2", 250)
+    .attr("stroke", "blue")
+    .attr("stroke-width", 4);
+    
+
+  // Rectangle
+  //soure = https://d3-graph-gallery.com/graph/shape.html
+  svg.append('rect')
+    .attr('x', 10)
+    .attr('y', 300)
+    .attr('width', 600)
+    .attr('height', 50)
+    .attr('stroke', 'black')
+    .attr('fill', 'tan');
+
+
+
+
+// my visualzition shows the differnt shapes that Ive created were a circle , rectangle, triangle, lines. I made a bunch of different colors
+// including blue, yellow, tan and purple. Overall its cool to see the power of svg and how we can create different shapes.
+
 </script>
+
+</body>
+</html>
+
+
