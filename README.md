@@ -85,3 +85,20 @@ Remember, it is up to *you* to define what constitutes a technical and design ac
 Be ambitious as these are designed to allow you to shape your learning.
 These are the only way to move from B to A territory.
 
+
+live site : https://arjunb0630.github.io/a1-ghd3/
+
+
+ my visualzition shows the differnt shapes that Ive created were a circle , rectangle, triangle, lines. I made a bunch of different colors including blue, yellow, tan and purple. Overall its cool to see the power of svg and how we can create different shapes.
+
+
+
+
+
+
+
+
+
+
+
+
